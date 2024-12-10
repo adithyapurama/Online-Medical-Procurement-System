@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medical Procurement System</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+        }
+
+        main {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .procurement-form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        label {
+            margin-bottom: 5px;
+        }
+
+        input {
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+
+        button {
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #555;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Medical Procurement System</h1>
+    </header>
+
+    <main>
+        <section class="procurement-form">
+            <h2>New Order</h2>
+            <form action="order.jsp" method="POST">
+                <label for="medicine-type">Medicine Type:</label>
+                <input type="text" id="medicine-type" name="medicine_type" required><br>
+
+                <label for="medicine-name">Medicine Name:</label>
+                <input type="text" id="medicine-name" name="medicine_name" required><br>
+
+                <label for="company">Company:</label>
+                <input type="text" id="company" name="company" required><br>
+
+                <label for="quantity">Quantity:</label>
+                <input type="number" id="quantity" name="quantity" required><br>
+
+                <label for="supplier">Supplier:</label>
+                <input type="text" id="supplier" name="supplier" required><br>
+
+                <button type="submit">Submit Order</button>
+                <button onclick="location.href='1.html';">logout</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Medical Procurement System. All rights reserved.</p>
+    </footer>
+
+</body>
+
+</html>
